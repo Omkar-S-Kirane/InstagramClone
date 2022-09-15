@@ -1,10 +1,12 @@
 import {View, Text, StatusBar, Image, ScrollView} from 'react-native';
-import React from 'react'
+import React from 'react';
+
 import styles from './Styles';
+import Stories from '../../screenComponents/Stories';
+import Post from '../../screenComponents/Post';
 
-import more from '../../../assets/icons/more.png'
-import chat from '../../../assets/icons/chat.png'
-
+import more from '../../../assets/icons/more.png';
+import chat from '../../../assets/icons/chat.png';
 
 const Home = () => {
   return (
@@ -25,10 +27,11 @@ const Home = () => {
       </View>
 
       <ScrollView>
-        
+        <Stories />
+        <Post />
       </ScrollView>
     </View>
   );
-}
+};
 
-export default Home
+export default Home;
